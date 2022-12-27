@@ -7,18 +7,10 @@
           (changeValue2)="value2 = $event"
         ></app-form-calculadora>
         <div class="d-flex gap-1">
-          <button (click)="sumar()" type="button" class="btn btn-primary">
-            +
-          </button>
-          <button (click)="restar()" type="button" class="btn btn-primary">
-            -
-          </button>
-          <button (click)="multiplicar()" type="button" class="btn btn-primary">
-            *
-          </button>
-          <button (click)="dividir()" type="button" class="btn btn-primary">
-            /
-          </button>
+          <app-button (click)="sumar()" [label]="'+'"></app-button>
+          <app-button (click)="restar()" [label]="'-'"></app-button>
+          <app-button (click)="multiplicar()" [label]="'*'"></app-button>
+          <app-button (click)="dividir()" [label]="'/'"></app-button>
         </div>
       </div>
     </div>

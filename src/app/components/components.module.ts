@@ -5,6 +5,7 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { FormsModule } from '@angular/forms';
 import { ResultadosComponent } from './resultados/resultados.component';
 import { FormCalculadoraComponent } from './form-calculadora/form-calculadora.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
@@ -13,7 +14,8 @@ import { FormCalculadoraComponent } from './form-calculadora/form-calculadora.co
     NavbarComponent,
     CalculadoraComponent,
     ResultadosComponent,
-    FormCalculadoraComponent
+    FormCalculadoraComponent,
+    ButtonComponent
   ],
   exports: [
     NavbarComponent,
