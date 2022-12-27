@@ -1,0 +1,20 @@
+<form>
+  <div class="mb-3">
+    <input
+      [(ngModel)]="value1"
+      name="value1"
+      type="number"
+      class="form-control form-control-lg"
+      (input)="changeValue1.emit(value1)"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+      [(ngModel)]="value2"
+      name="value2"
+      type="number"
+      class="form-control form-control-lg"
+      (input)="changeValue2.emit(value2)"
+    />
+  </div>
+</form>

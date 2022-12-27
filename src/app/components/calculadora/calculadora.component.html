@@ -2,24 +2,10 @@
   <div class="col-12 col-sm-10 col-md-5 col-lg-4">
     <div class="card">
       <div class="card-body">
-        <form>
-          <div class="mb-3">
-            <input
-              [(ngModel)]="value1"
-              name="value1"
-              type="number"
-              class="form-control form-control-lg"
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              [(ngModel)]="value2"
-              name="value2"
-              type="number"
-              class="form-control form-control-lg"
-            />
-          </div>
-        </form>
+        <app-form-calculadora
+          (changeValue1)="value1 = $event"
+          (changeValue2)="value2 = $event"
+        ></app-form-calculadora>
         <div class="d-flex gap-1">
           <button (click)="sumar()" type="button" class="btn btn-primary">
             +
