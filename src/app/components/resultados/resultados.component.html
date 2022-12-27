@@ -1,0 +1,8 @@
+<div class="alert alert-primary fs-1" role="alert">
+  {{ currentResult | number }}
+</div>
+<ul class="list-group">
+  <li *ngFor="let result of results" class="list-group-item">
+    {{ result }}
+  </li>
+</ul>

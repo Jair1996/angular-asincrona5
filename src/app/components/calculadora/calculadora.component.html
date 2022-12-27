@@ -38,13 +38,9 @@
     </div>
   </div>
   <div class="col-12 mt-5 col-sm-10 mt-md-0 col-md-6 col-lg-4">
-    <div class="alert alert-primary fs-1" role="alert">
-      {{ currentResult | number }}
-    </div>
-    <ul class="list-group">
-      <li *ngFor="let result of results" class="list-group-item">
-        {{ result }}
-      </li>
-    </ul>
+    <app-resultados
+      [currentResult]="currentResult"
+      [results]="results"
+    ></app-resultados>
   </div>
 </div>
